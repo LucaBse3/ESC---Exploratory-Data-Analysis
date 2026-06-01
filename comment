@@ -1,0 +1,22 @@
+**count_participations**
+Da es jedes Jahr eine unterschiedliche Anzahl an Teilnehmern gibt, habe ich die erreichte Platzierung bei jedem Modell im Verhältnis zu der Teilnehmeranzahl genommen.
+
+**feature_importance**
+Zur Bestimmung der Stärke an Einfluss eines Features, habe ich mich für diese features entschieden:
+- nummerische Features: *Punkte, Startposition, Heimvorteil (0 / 1)*
+- kategorische Features: *Genre, gesungene Sprache* 
+- Ziel-Label: *Platzierung*
+
+Die kategorischen Features habe ich durch Dummyvariablen aufgeteilt, damit keine künstliche Rangfolge entsteht (bsp: Sprache_German = 1, dann ist es deutsch, Sprache_German = 0, dann ist es nicht deutsch).
+
+**genre_influence**
+Besonders spannend fande ich es herauszufinden, ob es ein heraustechendes Genre gibt und welches Genre die höchste Gewinnwahrscheinlichkeit hat.
+Hier lässt sich in den Ergebnissen interessanter Weise auch ein wandel der gängigen Genres erkennen und dann 2020 kein ESC stattgefunden hat.
+
+**prediction_2027**
+Für eine belastbare Vorhersage basierend auf historischen Daten mussten einige Länder die nur wenige Teilnahmen hatten herausgefiltert werden.
+Zuerst habe ich versucht diese auszudünnen, indem ich festlege, dass ein land mindestens 30 Teilnahmen ghabt haben muss, so wurden jedoch auch Länder berücksichtigt, die seit einigen jahren nicht mehr teilgenommen haben.
+Daher habe ich mich dazu entschieden lediglich die Teilnehmer zu berücksichtigen, die in den letzten 3 am esc teilgenommen haben, woraufhin die Ausgabe zufriedenstellen war.
+
+
+*Alle Jupyter Notebooks sind in deutsch als pdf angehägt und die Ergbnisse als Bilddatei.*
